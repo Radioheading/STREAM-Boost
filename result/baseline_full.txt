@@ -1,0 +1,419 @@
+Training with only the source dataset
+Epoch: 0
+[3168/60000 (6%)]       Classification Loss: 0.3845
+[6368/60000 (12%)]      Classification Loss: 0.1263
+[9568/60000 (17%)]      Classification Loss: 0.1213
+[12768/60000 (23%)]     Classification Loss: 0.0843
+[15968/60000 (29%)]     Classification Loss: 0.1107
+[19168/60000 (35%)]     Classification Loss: 0.1898
+[22368/60000 (41%)]     Classification Loss: 0.0152
+[25568/60000 (46%)]     Classification Loss: 0.0528
+[28768/60000 (52%)]     Classification Loss: 0.1925
+[31968/60000 (58%)]     Classification Loss: 0.0081
+[35168/60000 (64%)]     Classification Loss: 0.0462
+[38368/60000 (70%)]     Classification Loss: 0.0686
+[41568/60000 (76%)]     Classification Loss: 0.0142
+[44768/60000 (81%)]     Classification Loss: 0.0370
+[47968/60000 (87%)]     Classification Loss: 0.1377
+[51168/60000 (93%)]     Classification Loss: 0.0121
+[54368/60000 (99%)]     Classification Loss: 0.0873
+Test Results on Source_only:
+Source Accuracy: 9876/10000 (98.76%)
+Target Accuracy: 6227/10000 (62.27%)
+Epoch: 1
+[3168/60000 (6%)]       Classification Loss: 0.0120
+[6368/60000 (12%)]      Classification Loss: 0.0224
+[9568/60000 (17%)]      Classification Loss: 0.0030
+[12768/60000 (23%)]     Classification Loss: 0.0443
+[15968/60000 (29%)]     Classification Loss: 0.0483
+[19168/60000 (35%)]     Classification Loss: 0.0111
+[22368/60000 (41%)]     Classification Loss: 0.0193
+[25568/60000 (46%)]     Classification Loss: 0.0735
+[28768/60000 (52%)]     Classification Loss: 0.0097
+[31968/60000 (58%)]     Classification Loss: 0.0013
+[35168/60000 (64%)]     Classification Loss: 0.0641
+[38368/60000 (70%)]     Classification Loss: 0.0813
+[41568/60000 (76%)]     Classification Loss: 0.0337
+[44768/60000 (81%)]     Classification Loss: 0.0846
+[47968/60000 (87%)]     Classification Loss: 0.0033
+[51168/60000 (93%)]     Classification Loss: 0.1319
+[54368/60000 (99%)]     Classification Loss: 0.0067
+Test Results on Source_only:
+Source Accuracy: 9902/10000 (99.02%)
+Target Accuracy: 6316/10000 (63.16%)
+Epoch: 2
+[3168/60000 (6%)]       Classification Loss: 0.0054
+[6368/60000 (12%)]      Classification Loss: 0.0408
+[9568/60000 (17%)]      Classification Loss: 0.0032
+[12768/60000 (23%)]     Classification Loss: 0.0171
+[15968/60000 (29%)]     Classification Loss: 0.0497
+[19168/60000 (35%)]     Classification Loss: 0.0310
+[22368/60000 (41%)]     Classification Loss: 0.0253
+[25568/60000 (46%)]     Classification Loss: 0.0004
+[28768/60000 (52%)]     Classification Loss: 0.0010
+[31968/60000 (58%)]     Classification Loss: 0.0055
+[35168/60000 (64%)]     Classification Loss: 0.0057
+[38368/60000 (70%)]     Classification Loss: 0.0024
+[41568/60000 (76%)]     Classification Loss: 0.1503
+[44768/60000 (81%)]     Classification Loss: 0.1026
+[47968/60000 (87%)]     Classification Loss: 0.0060
+[51168/60000 (93%)]     Classification Loss: 0.0738
+[54368/60000 (99%)]     Classification Loss: 0.0152
+Test Results on Source_only:
+Source Accuracy: 9919/10000 (99.19%)
+Target Accuracy: 6401/10000 (64.01%)
+Epoch: 3
+[3168/60000 (6%)]       Classification Loss: 0.0005
+[6368/60000 (12%)]      Classification Loss: 0.0429
+[9568/60000 (17%)]      Classification Loss: 0.0085
+[12768/60000 (23%)]     Classification Loss: 0.0131
+[15968/60000 (29%)]     Classification Loss: 0.0725
+[19168/60000 (35%)]     Classification Loss: 0.0004
+[22368/60000 (41%)]     Classification Loss: 0.1547
+[25568/60000 (46%)]     Classification Loss: 0.0029
+[28768/60000 (52%)]     Classification Loss: 0.0005
+[31968/60000 (58%)]     Classification Loss: 0.0014
+[35168/60000 (64%)]     Classification Loss: 0.0315
+[38368/60000 (70%)]     Classification Loss: 0.0036
+[41568/60000 (76%)]     Classification Loss: 0.0130
+[44768/60000 (81%)]     Classification Loss: 0.0350
+[47968/60000 (87%)]     Classification Loss: 0.0265
+[51168/60000 (93%)]     Classification Loss: 0.0089
+[54368/60000 (99%)]     Classification Loss: 0.0026
+Test Results on Source_only:
+Source Accuracy: 9927/10000 (99.27%)
+Target Accuracy: 6252/10000 (62.52%)
+Epoch: 4
+[3168/60000 (6%)]       Classification Loss: 0.0220
+[6368/60000 (12%)]      Classification Loss: 0.0006
+[9568/60000 (17%)]      Classification Loss: 0.0070
+[12768/60000 (23%)]     Classification Loss: 0.0017
+[15968/60000 (29%)]     Classification Loss: 0.0016
+[19168/60000 (35%)]     Classification Loss: 0.0021
+[22368/60000 (41%)]     Classification Loss: 0.0029
+[25568/60000 (46%)]     Classification Loss: 0.0303
+[28768/60000 (52%)]     Classification Loss: 0.0026
+[31968/60000 (58%)]     Classification Loss: 0.0001
+[35168/60000 (64%)]     Classification Loss: 0.0002
+[38368/60000 (70%)]     Classification Loss: 0.0010
+[41568/60000 (76%)]     Classification Loss: 0.0003
+[44768/60000 (81%)]     Classification Loss: 0.0052
+[47968/60000 (87%)]     Classification Loss: 0.0025
+[51168/60000 (93%)]     Classification Loss: 0.0009
+[54368/60000 (99%)]     Classification Loss: 0.0011
+Test Results on Source_only:
+Source Accuracy: 9934/10000 (99.34%)
+Target Accuracy: 6166/10000 (61.66%)
+Epoch: 5
+[3168/60000 (6%)]       Classification Loss: 0.0027
+[6368/60000 (12%)]      Classification Loss: 0.0012
+[9568/60000 (17%)]      Classification Loss: 0.0020
+[12768/60000 (23%)]     Classification Loss: 0.0139
+[15968/60000 (29%)]     Classification Loss: 0.0395
+[19168/60000 (35%)]     Classification Loss: 0.0229
+[22368/60000 (41%)]     Classification Loss: 0.0005
+[25568/60000 (46%)]     Classification Loss: 0.0045
+[28768/60000 (52%)]     Classification Loss: 0.0016
+[31968/60000 (58%)]     Classification Loss: 0.0016
+[35168/60000 (64%)]     Classification Loss: 0.0102
+[38368/60000 (70%)]     Classification Loss: 0.0004
+[41568/60000 (76%)]     Classification Loss: 0.0005
+[44768/60000 (81%)]     Classification Loss: 0.0157
+[47968/60000 (87%)]     Classification Loss: 0.2848
+[51168/60000 (93%)]     Classification Loss: 0.0038
+[54368/60000 (99%)]     Classification Loss: 0.0099
+Test Results on Source_only:
+Source Accuracy: 9920/10000 (99.20%)
+Target Accuracy: 6309/10000 (63.09%)
+Epoch: 6
+[3168/60000 (6%)]       Classification Loss: 0.0052
+[6368/60000 (12%)]      Classification Loss: 0.0004
+[9568/60000 (17%)]      Classification Loss: 0.0062
+[12768/60000 (23%)]     Classification Loss: 0.0091
+[15968/60000 (29%)]     Classification Loss: 0.0000
+[19168/60000 (35%)]     Classification Loss: 0.0001
+[22368/60000 (41%)]     Classification Loss: 0.0001
+[25568/60000 (46%)]     Classification Loss: 0.0003
+[28768/60000 (52%)]     Classification Loss: 0.0191
+[31968/60000 (58%)]     Classification Loss: 0.0009
+[35168/60000 (64%)]     Classification Loss: 0.0240
+[38368/60000 (70%)]     Classification Loss: 0.0044
+[41568/60000 (76%)]     Classification Loss: 0.0015
+[44768/60000 (81%)]     Classification Loss: 0.0003
+[47968/60000 (87%)]     Classification Loss: 0.0002
+[51168/60000 (93%)]     Classification Loss: 0.0017
+[54368/60000 (99%)]     Classification Loss: 0.0043
+Test Results on Source_only:
+Source Accuracy: 9935/10000 (99.35%)
+Target Accuracy: 6244/10000 (62.44%)
+Epoch: 7
+[3168/60000 (6%)]       Classification Loss: 0.0008
+[6368/60000 (12%)]      Classification Loss: 0.0003
+[9568/60000 (17%)]      Classification Loss: 0.0017
+[12768/60000 (23%)]     Classification Loss: 0.0006
+[15968/60000 (29%)]     Classification Loss: 0.0025
+[19168/60000 (35%)]     Classification Loss: 0.0002
+[22368/60000 (41%)]     Classification Loss: 0.0000
+[25568/60000 (46%)]     Classification Loss: 0.0001
+[28768/60000 (52%)]     Classification Loss: 0.0019
+[31968/60000 (58%)]     Classification Loss: 0.0001
+[35168/60000 (64%)]     Classification Loss: 0.0157
+[38368/60000 (70%)]     Classification Loss: 0.0001
+[41568/60000 (76%)]     Classification Loss: 0.0030
+[44768/60000 (81%)]     Classification Loss: 0.0001
+[47968/60000 (87%)]     Classification Loss: 0.0017
+[51168/60000 (93%)]     Classification Loss: 0.0001
+[54368/60000 (99%)]     Classification Loss: 0.0079
+Test Results on Source_only:
+Source Accuracy: 9921/10000 (99.21%)
+Target Accuracy: 6158/10000 (61.58%)
+Epoch: 8
+[3168/60000 (6%)]       Classification Loss: 0.0010
+[6368/60000 (12%)]      Classification Loss: 0.0000
+[9568/60000 (17%)]      Classification Loss: 0.0001
+[12768/60000 (23%)]     Classification Loss: 0.0019
+[15968/60000 (29%)]     Classification Loss: 0.0002
+[19168/60000 (35%)]     Classification Loss: 0.0007
+[22368/60000 (41%)]     Classification Loss: 0.0027
+[25568/60000 (46%)]     Classification Loss: 0.0002
+[28768/60000 (52%)]     Classification Loss: 0.0001
+[31968/60000 (58%)]     Classification Loss: 0.0003
+[35168/60000 (64%)]     Classification Loss: 0.0022
+[38368/60000 (70%)]     Classification Loss: 0.0002
+[41568/60000 (76%)]     Classification Loss: 0.0000
+[44768/60000 (81%)]     Classification Loss: 0.0025
+[47968/60000 (87%)]     Classification Loss: 0.0015
+[51168/60000 (93%)]     Classification Loss: 0.0000
+[54368/60000 (99%)]     Classification Loss: 0.0061
+Test Results on Source_only:
+Source Accuracy: 9927/10000 (99.27%)
+Target Accuracy: 6207/10000 (62.07%)
+Epoch: 9
+[3168/60000 (6%)]       Classification Loss: 0.0004
+[6368/60000 (12%)]      Classification Loss: 0.0037
+[9568/60000 (17%)]      Classification Loss: 0.0037
+[12768/60000 (23%)]     Classification Loss: 0.0007
+[15968/60000 (29%)]     Classification Loss: 0.0000
+[19168/60000 (35%)]     Classification Loss: 0.0028
+[22368/60000 (41%)]     Classification Loss: 0.0001
+[25568/60000 (46%)]     Classification Loss: 0.0000
+[28768/60000 (52%)]     Classification Loss: 0.0007
+[31968/60000 (58%)]     Classification Loss: 0.0004
+[35168/60000 (64%)]     Classification Loss: 0.0024
+[38368/60000 (70%)]     Classification Loss: 0.0020
+[41568/60000 (76%)]     Classification Loss: 0.0002
+[44768/60000 (81%)]     Classification Loss: 0.0013
+[47968/60000 (87%)]     Classification Loss: 0.0001
+[51168/60000 (93%)]     Classification Loss: 0.0012
+[54368/60000 (99%)]     Classification Loss: 0.0030
+Test Results on Source_only:
+Source Accuracy: 9926/10000 (99.26%)
+Target Accuracy: 6254/10000 (62.54%)
+Saving models ...
+The model has been successfully saved!
+Extracting features to draw t-SNE plot...
+/root/miniconda3/envs/dann/lib/python3.7/site-packages/sklearn/manifold/_t_sne.py:793: FutureWarning: The default learning rate in TSNE will change from 200.0 to 'auto' in 1.2.
+  FutureWarning,
+/root/miniconda3/envs/dann/lib/python3.7/site-packages/sklearn/manifold/_t_sne.py:986: FutureWarning: The PCA initialization in TSNE will change to have the standard deviation of PC1 equal to 1e-4 in 1.2. This will ensure better convergence.
+  FutureWarning,
+Drawing t-SNE plot ...
+saved_plot/Source-only.png has been successfully saved!
+Training with the DANN adaptation method
+Epoch: 0
+[3168/60000 (6%)]       Total Loss: 0.1870      Classification Loss: 0.0058     Domain Loss: 0.1812
+[6368/60000 (12%)]      Total Loss: 0.2223      Classification Loss: 0.0644     Domain Loss: 0.1579
+[9568/60000 (17%)]      Total Loss: 0.1422      Classification Loss: 0.0003     Domain Loss: 0.1419
+[12768/60000 (23%)]     Total Loss: 0.1801      Classification Loss: 0.0010     Domain Loss: 0.1791
+[15968/60000 (29%)]     Total Loss: 0.0455      Classification Loss: 0.0003     Domain Loss: 0.0452
+[19168/60000 (35%)]     Total Loss: 0.2393      Classification Loss: 0.1297     Domain Loss: 0.1096
+[22368/60000 (41%)]     Total Loss: 0.1821      Classification Loss: 0.0223     Domain Loss: 0.1599
+[25568/60000 (46%)]     Total Loss: 0.1207      Classification Loss: 0.0019     Domain Loss: 0.1188
+[28768/60000 (52%)]     Total Loss: 0.1398      Classification Loss: 0.0007     Domain Loss: 0.1391
+[31968/60000 (58%)]     Total Loss: 0.0681      Classification Loss: 0.0059     Domain Loss: 0.0622
+[35168/60000 (64%)]     Total Loss: 0.1826      Classification Loss: 0.0003     Domain Loss: 0.1824
+[38368/60000 (70%)]     Total Loss: 0.1486      Classification Loss: 0.0076     Domain Loss: 0.1410
+[41568/60000 (76%)]     Total Loss: 0.1415      Classification Loss: 0.0017     Domain Loss: 0.1397
+[44768/60000 (81%)]     Total Loss: 0.5480      Classification Loss: 0.2841     Domain Loss: 0.2640
+[47968/60000 (87%)]     Total Loss: 0.3224      Classification Loss: 0.0162     Domain Loss: 0.3062
+[51168/60000 (93%)]     Total Loss: 0.2976      Classification Loss: 0.0882     Domain Loss: 0.2094
+[54368/60000 (99%)]     Total Loss: 0.4463      Classification Loss: 0.0891     Domain Loss: 0.3572
+Test Results on DANN:
+Source Accuracy: 9778/10000 (97.78%)
+Target Accuracy: 6110/10000 (61.10%)
+Domain Accuracy: 12451/20000 (62.26%)
+Epoch: 1
+[3168/60000 (6%)]       Total Loss: 0.4883      Classification Loss: 0.1407     Domain Loss: 0.3476
+[6368/60000 (12%)]      Total Loss: 0.3904      Classification Loss: 0.1833     Domain Loss: 0.2071
+[9568/60000 (17%)]      Total Loss: 0.7191      Classification Loss: 0.0129     Domain Loss: 0.7062
+[12768/60000 (23%)]     Total Loss: 0.5988      Classification Loss: 0.0105     Domain Loss: 0.5883
+[15968/60000 (29%)]     Total Loss: 0.4300      Classification Loss: 0.0880     Domain Loss: 0.3420
+[19168/60000 (35%)]     Total Loss: 0.6802      Classification Loss: 0.2518     Domain Loss: 0.4284
+[22368/60000 (41%)]     Total Loss: 0.5856      Classification Loss: 0.1586     Domain Loss: 0.4270
+[25568/60000 (46%)]     Total Loss: 0.7362      Classification Loss: 0.1118     Domain Loss: 0.6244
+[28768/60000 (52%)]     Total Loss: 0.4867      Classification Loss: 0.0307     Domain Loss: 0.4560
+[31968/60000 (58%)]     Total Loss: 0.9633      Classification Loss: 0.0262     Domain Loss: 0.9371
+[35168/60000 (64%)]     Total Loss: 0.6430      Classification Loss: 0.0064     Domain Loss: 0.6367
+[38368/60000 (70%)]     Total Loss: 0.7512      Classification Loss: 0.2194     Domain Loss: 0.5318
+[41568/60000 (76%)]     Total Loss: 0.5081      Classification Loss: 0.0419     Domain Loss: 0.4662
+[44768/60000 (81%)]     Total Loss: 0.6063      Classification Loss: 0.1439     Domain Loss: 0.4624
+[47968/60000 (87%)]     Total Loss: 0.4888      Classification Loss: 0.0185     Domain Loss: 0.4703
+[51168/60000 (93%)]     Total Loss: 0.5212      Classification Loss: 0.0391     Domain Loss: 0.4822
+[54368/60000 (99%)]     Total Loss: 0.5448      Classification Loss: 0.1812     Domain Loss: 0.3636
+Test Results on DANN:
+Source Accuracy: 9778/10000 (97.78%)
+Target Accuracy: 7019/10000 (70.19%)
+Domain Accuracy: 15663/20000 (78.31%)
+Epoch: 2
+[3168/60000 (6%)]       Total Loss: 0.6862      Classification Loss: 0.0476     Domain Loss: 0.6385
+[6368/60000 (12%)]      Total Loss: 0.5575      Classification Loss: 0.0014     Domain Loss: 0.5561
+[9568/60000 (17%)]      Total Loss: 0.5793      Classification Loss: 0.0120     Domain Loss: 0.5673
+[12768/60000 (23%)]     Total Loss: 0.4544      Classification Loss: 0.0082     Domain Loss: 0.4462
+[15968/60000 (29%)]     Total Loss: 0.5546      Classification Loss: 0.0023     Domain Loss: 0.5523
+[19168/60000 (35%)]     Total Loss: 0.5069      Classification Loss: 0.0017     Domain Loss: 0.5051
+[22368/60000 (41%)]     Total Loss: 0.8049      Classification Loss: 0.1548     Domain Loss: 0.6501
+[25568/60000 (46%)]     Total Loss: 0.6350      Classification Loss: 0.0492     Domain Loss: 0.5857
+[28768/60000 (52%)]     Total Loss: 0.6889      Classification Loss: 0.1405     Domain Loss: 0.5484
+[31968/60000 (58%)]     Total Loss: 0.5494      Classification Loss: 0.0067     Domain Loss: 0.5427
+[35168/60000 (64%)]     Total Loss: 0.5961      Classification Loss: 0.0018     Domain Loss: 0.5943
+[38368/60000 (70%)]     Total Loss: 0.5257      Classification Loss: 0.0006     Domain Loss: 0.5250
+[41568/60000 (76%)]     Total Loss: 0.5666      Classification Loss: 0.0081     Domain Loss: 0.5585
+[44768/60000 (81%)]     Total Loss: 0.6929      Classification Loss: 0.0646     Domain Loss: 0.6283
+[47968/60000 (87%)]     Total Loss: 0.5529      Classification Loss: 0.0424     Domain Loss: 0.5105
+[51168/60000 (93%)]     Total Loss: 0.5865      Classification Loss: 0.0199     Domain Loss: 0.5666
+[54368/60000 (99%)]     Total Loss: 0.5024      Classification Loss: 0.0136     Domain Loss: 0.4889
+Test Results on DANN:
+Source Accuracy: 9872/10000 (98.72%)
+Target Accuracy: 7845/10000 (78.45%)
+Domain Accuracy: 13926/20000 (69.63%)
+Epoch: 3
+[3168/60000 (6%)]       Total Loss: 0.4985      Classification Loss: 0.0132     Domain Loss: 0.4853
+[6368/60000 (12%)]      Total Loss: 0.5156      Classification Loss: 0.0020     Domain Loss: 0.5136
+[9568/60000 (17%)]      Total Loss: 0.4877      Classification Loss: 0.0009     Domain Loss: 0.4869
+[12768/60000 (23%)]     Total Loss: 0.6423      Classification Loss: 0.0017     Domain Loss: 0.6406
+[15968/60000 (29%)]     Total Loss: 0.5852      Classification Loss: 0.0712     Domain Loss: 0.5140
+[19168/60000 (35%)]     Total Loss: 0.4778      Classification Loss: 0.0006     Domain Loss: 0.4772
+[22368/60000 (41%)]     Total Loss: 0.6513      Classification Loss: 0.1120     Domain Loss: 0.5393
+[25568/60000 (46%)]     Total Loss: 0.6151      Classification Loss: 0.1063     Domain Loss: 0.5087
+[28768/60000 (52%)]     Total Loss: 0.7595      Classification Loss: 0.1330     Domain Loss: 0.6266
+[31968/60000 (58%)]     Total Loss: 0.6540      Classification Loss: 0.0038     Domain Loss: 0.6501
+[35168/60000 (64%)]     Total Loss: 0.5345      Classification Loss: 0.0087     Domain Loss: 0.5258
+[38368/60000 (70%)]     Total Loss: 0.5770      Classification Loss: 0.0043     Domain Loss: 0.5726
+[41568/60000 (76%)]     Total Loss: 0.6654      Classification Loss: 0.0772     Domain Loss: 0.5882
+[44768/60000 (81%)]     Total Loss: 0.5219      Classification Loss: 0.0317     Domain Loss: 0.4902
+[47968/60000 (87%)]     Total Loss: 0.4647      Classification Loss: 0.0058     Domain Loss: 0.4589
+[51168/60000 (93%)]     Total Loss: 0.6762      Classification Loss: 0.0390     Domain Loss: 0.6372
+[54368/60000 (99%)]     Total Loss: 0.7128      Classification Loss: 0.1204     Domain Loss: 0.5924
+Test Results on DANN:
+Source Accuracy: 9869/10000 (98.69%)
+Target Accuracy: 7734/10000 (77.34%)
+Domain Accuracy: 14022/20000 (70.11%)
+Epoch: 4
+[3168/60000 (6%)]       Total Loss: 0.6114      Classification Loss: 0.0050     Domain Loss: 0.6064
+[6368/60000 (12%)]      Total Loss: 0.4499      Classification Loss: 0.0036     Domain Loss: 0.4463
+[9568/60000 (17%)]      Total Loss: 0.9461      Classification Loss: 0.3187     Domain Loss: 0.6274
+[12768/60000 (23%)]     Total Loss: 0.5902      Classification Loss: 0.0005     Domain Loss: 0.5897
+[15968/60000 (29%)]     Total Loss: 0.4484      Classification Loss: 0.0016     Domain Loss: 0.4468
+[19168/60000 (35%)]     Total Loss: 0.5439      Classification Loss: 0.0414     Domain Loss: 0.5025
+[22368/60000 (41%)]     Total Loss: 0.6290      Classification Loss: 0.0699     Domain Loss: 0.5591
+[25568/60000 (46%)]     Total Loss: 0.6357      Classification Loss: 0.0008     Domain Loss: 0.6349
+[28768/60000 (52%)]     Total Loss: 0.6632      Classification Loss: 0.1525     Domain Loss: 0.5108
+[31968/60000 (58%)]     Total Loss: 0.5176      Classification Loss: 0.0020     Domain Loss: 0.5156
+[35168/60000 (64%)]     Total Loss: 0.5626      Classification Loss: 0.0040     Domain Loss: 0.5586
+[38368/60000 (70%)]     Total Loss: 0.5331      Classification Loss: 0.0085     Domain Loss: 0.5246
+[41568/60000 (76%)]     Total Loss: 0.5160      Classification Loss: 0.0336     Domain Loss: 0.4824
+[44768/60000 (81%)]     Total Loss: 0.7057      Classification Loss: 0.0702     Domain Loss: 0.6355
+[47968/60000 (87%)]     Total Loss: 0.5371      Classification Loss: 0.0348     Domain Loss: 0.5023
+[51168/60000 (93%)]     Total Loss: 0.5852      Classification Loss: 0.0041     Domain Loss: 0.5811
+[54368/60000 (99%)]     Total Loss: 0.5165      Classification Loss: 0.0152     Domain Loss: 0.5013
+Test Results on DANN:
+Source Accuracy: 9898/10000 (98.98%)
+Target Accuracy: 8135/10000 (81.35%)
+Domain Accuracy: 13734/20000 (68.67%)
+Epoch: 5
+[3168/60000 (6%)]       Total Loss: 0.6138      Classification Loss: 0.0111     Domain Loss: 0.6027
+[6368/60000 (12%)]      Total Loss: 0.9109      Classification Loss: 0.3064     Domain Loss: 0.6044
+[9568/60000 (17%)]      Total Loss: 0.5542      Classification Loss: 0.0006     Domain Loss: 0.5536
+[12768/60000 (23%)]     Total Loss: 0.5877      Classification Loss: 0.0010     Domain Loss: 0.5866
+[15968/60000 (29%)]     Total Loss: 0.5236      Classification Loss: 0.0224     Domain Loss: 0.5012
+[19168/60000 (35%)]     Total Loss: 0.7198      Classification Loss: 0.1189     Domain Loss: 0.6009
+[22368/60000 (41%)]     Total Loss: 0.5231      Classification Loss: 0.0006     Domain Loss: 0.5225
+[25568/60000 (46%)]     Total Loss: 0.5739      Classification Loss: 0.0221     Domain Loss: 0.5518
+[28768/60000 (52%)]     Total Loss: 0.6354      Classification Loss: 0.0362     Domain Loss: 0.5993
+[31968/60000 (58%)]     Total Loss: 0.4833      Classification Loss: 0.0304     Domain Loss: 0.4529
+[35168/60000 (64%)]     Total Loss: 0.4571      Classification Loss: 0.0038     Domain Loss: 0.4533
+[38368/60000 (70%)]     Total Loss: 0.6845      Classification Loss: 0.0771     Domain Loss: 0.6074
+[41568/60000 (76%)]     Total Loss: 0.7169      Classification Loss: 0.0074     Domain Loss: 0.7095
+[44768/60000 (81%)]     Total Loss: 0.5649      Classification Loss: 0.0049     Domain Loss: 0.5601
+[47968/60000 (87%)]     Total Loss: 0.6479      Classification Loss: 0.0065     Domain Loss: 0.6414
+[51168/60000 (93%)]     Total Loss: 0.5946      Classification Loss: 0.0010     Domain Loss: 0.5935
+[54368/60000 (99%)]     Total Loss: 0.2994      Classification Loss: 0.0283     Domain Loss: 0.2711
+Test Results on DANN:
+Source Accuracy: 9781/10000 (97.81%)
+Target Accuracy: 7342/10000 (73.42%)
+Domain Accuracy: 15289/20000 (76.44%)
+Epoch: 6
+[3168/60000 (6%)]       Total Loss: 0.6172      Classification Loss: 0.0083     Domain Loss: 0.6090
+[6368/60000 (12%)]      Total Loss: 0.5609      Classification Loss: 0.0032     Domain Loss: 0.5578
+[9568/60000 (17%)]      Total Loss: 0.4752      Classification Loss: 0.0022     Domain Loss: 0.4730
+[12768/60000 (23%)]     Total Loss: 0.6075      Classification Loss: 0.0030     Domain Loss: 0.6046
+[15968/60000 (29%)]     Total Loss: 0.6551      Classification Loss: 0.0303     Domain Loss: 0.6248
+[19168/60000 (35%)]     Total Loss: 0.7012      Classification Loss: 0.0032     Domain Loss: 0.6980
+[22368/60000 (41%)]     Total Loss: 0.5166      Classification Loss: 0.0002     Domain Loss: 0.5164
+[25568/60000 (46%)]     Total Loss: 0.6673      Classification Loss: 0.0164     Domain Loss: 0.6509
+[28768/60000 (52%)]     Total Loss: 0.5434      Classification Loss: 0.0066     Domain Loss: 0.5369
+[31968/60000 (58%)]     Total Loss: 0.5194      Classification Loss: 0.0007     Domain Loss: 0.5187
+[35168/60000 (64%)]     Total Loss: 0.5681      Classification Loss: 0.0276     Domain Loss: 0.5404
+[38368/60000 (70%)]     Total Loss: 0.5335      Classification Loss: 0.0035     Domain Loss: 0.5300
+[41568/60000 (76%)]     Total Loss: 0.6324      Classification Loss: 0.0041     Domain Loss: 0.6282
+[44768/60000 (81%)]     Total Loss: 0.6077      Classification Loss: 0.0053     Domain Loss: 0.6025
+[47968/60000 (87%)]     Total Loss: 0.5855      Classification Loss: 0.0337     Domain Loss: 0.5518
+[51168/60000 (93%)]     Total Loss: 0.5970      Classification Loss: 0.0186     Domain Loss: 0.5783
+[54368/60000 (99%)]     Total Loss: 0.6346      Classification Loss: 0.0254     Domain Loss: 0.6092
+Test Results on DANN:
+Source Accuracy: 9892/10000 (98.92%)
+Target Accuracy: 7865/10000 (78.65%)
+Domain Accuracy: 12747/20000 (63.73%)
+Epoch: 7
+[3168/60000 (6%)]       Total Loss: 0.5806      Classification Loss: 0.0069     Domain Loss: 0.5737
+[6368/60000 (12%)]      Total Loss: 0.6800      Classification Loss: 0.0692     Domain Loss: 0.6108
+[9568/60000 (17%)]      Total Loss: 0.5038      Classification Loss: 0.0082     Domain Loss: 0.4956
+[12768/60000 (23%)]     Total Loss: 0.5242      Classification Loss: 0.0356     Domain Loss: 0.4886
+[15968/60000 (29%)]     Total Loss: 0.5831      Classification Loss: 0.0026     Domain Loss: 0.5805
+[19168/60000 (35%)]     Total Loss: 0.6020      Classification Loss: 0.0048     Domain Loss: 0.5973
+[22368/60000 (41%)]     Total Loss: 0.5577      Classification Loss: 0.0130     Domain Loss: 0.5448
+[25568/60000 (46%)]     Total Loss: 0.6606      Classification Loss: 0.1233     Domain Loss: 0.5373
+[28768/60000 (52%)]     Total Loss: 0.6464      Classification Loss: 0.0184     Domain Loss: 0.6280
+[31968/60000 (58%)]     Total Loss: 0.5495      Classification Loss: 0.0001     Domain Loss: 0.5494
+[35168/60000 (64%)]     Total Loss: 0.5437      Classification Loss: 0.0297     Domain Loss: 0.5139
+[38368/60000 (70%)]     Total Loss: 0.7322      Classification Loss: 0.0703     Domain Loss: 0.6619
+[41568/60000 (76%)]     Total Loss: 0.5651      Classification Loss: 0.0063     Domain Loss: 0.5588
+[44768/60000 (81%)]     Total Loss: 0.5358      Classification Loss: 0.0160     Domain Loss: 0.5198
+[47968/60000 (87%)]     Total Loss: 0.6588      Classification Loss: 0.0011     Domain Loss: 0.6577
+[51168/60000 (93%)]     Total Loss: 0.5876      Classification Loss: 0.0283     Domain Loss: 0.5593
+[54368/60000 (99%)]     Total Loss: 0.6333      Classification Loss: 0.0043     Domain Loss: 0.6289
+Test Results on DANN:
+Source Accuracy: 9901/10000 (99.01%)
+Target Accuracy: 8264/10000 (82.64%)
+Domain Accuracy: 13746/20000 (68.73%)
+Epoch: 8
+[3168/60000 (6%)]       Total Loss: 0.5634      Classification Loss: 0.0636     Domain Loss: 0.4999
+[6368/60000 (12%)]      Total Loss: 0.5663      Classification Loss: 0.0001     Domain Loss: 0.5662
+[9568/60000 (17%)]      Total Loss: 0.5910      Classification Loss: 0.0023     Domain Loss: 0.5887
+[12768/60000 (23%)]     Total Loss: 0.4809      Classification Loss: 0.0057     Domain Loss: 0.4753
+[15968/60000 (29%)]     Total Loss: 0.5616      Classification Loss: 0.0063     Domain Loss: 0.5554
+[19168/60000 (35%)]     Total Loss: 0.5148      Classification Loss: 0.0040     Domain Loss: 0.5108
+[22368/60000 (41%)]     Total Loss: 0.7316      Classification Loss: 0.0709     Domain Loss: 0.6607
+[25568/60000 (46%)]     Total Loss: 0.6304      Classification Loss: 0.0013     Domain Loss: 0.6291
+[28768/60000 (52%)]     Total Loss: 0.5368      Classification Loss: 0.0055     Domain Loss: 0.5313
+[31968/60000 (58%)]     Total Loss: 0.6188      Classification Loss: 0.0033     Domain Loss: 0.6156
+[35168/60000 (64%)]     Total Loss: 0.5192      Classification Loss: 0.0091     Domain Loss: 0.5101
+[38368/60000 (70%)]     Total Loss: 0.5991      Classification Loss: 0.0000     Domain Loss: 0.5990
+[41568/60000 (76%)]     Total Loss: 0.5577      Classification Loss: 0.0015     Domain Loss: 0.5562
+[44768/60000 (81%)]     Total Loss: 0.6793      Classification Loss: 0.0881     Domain Loss: 0.5911
+[47968/60000 (87%)]     Total Loss: 0.6426      Classification Loss: 0.0260     Domain Loss: 0.6166
+[51168/60000 (93%)]     Total Loss: 0.5808      Classification Loss: 0.0024     Domain Loss: 0.5784
+[54368/60000 (99%)]     Total Loss: 0.6622      Classification Loss: 0.0267     Domain Loss: 0.6355
+Test Results on DANN:
+Source Accuracy: 9889/10000 (98.89%)
+Target Accuracy: 8241/10000 (82.41%)
+Domain Accuracy: 13294/20000 (66.47%)
