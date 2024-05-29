@@ -1,59 +1,46 @@
-# DANN-PyTorch :fire:
-PyTorch implementation of DANN (Domain-Adversarial Training of Neural Networks)
+# STERAM-DANN Model
 
-> **[Unsupervised Domain Adaptation by Backpropagation](http://sites.skoltech.ru/compvision/projects/grl/files/paper.pdf)**</br>
-> Yaroslav Ganin, Victor Lempitsky</br>
-> *In PMLR-2015*
+official pytorch implementation of the paper:
 
-> **[Domain-Adversarial Training of Neural Networks](http://jmlr.org/papers/volume17/15-239/15-239.pdf)**</br>
-> Yaroslav Ganin et al.</br>
-> *In JMLR-2016*
+[STREAM: Sequential Training for Real-Time Efficient
+Adaptation Model
+](https://latex.sjtu.edu.cn/read/vcrhjyjsmwyn#6efa6e)
 
+> Unsupervised domain adaptation (UDA) is a pivotal area in machine learning that aims to transfer knowledge across domains without supervision. Given the substantial time and GPU resources required for training UDA models, accelerating their training is crucial. In our paper, we introduce STREAM, a novel framework that optimizes training time by leveraging target training data upload and download processes. By incorporating confidence distillation and loss adaptation modules, STREAM-enhanced DANN achieves over 80% of the original model’s potential solely during dataset upload or download process under diverse network conditions. Notably, STREAM is independent from specific UDA methods, enabling seamless integration with most of GAN-based UDA techniques in the field.
 
 ## Getting started
 
-### Installation
-Install library versions that are compatible with your environment.
-```bash
-git clone https://github.com/NaJaeMin92/pytorch-DANN.git
-cd pytorch-DANN
-conda create -n dann python=3.7
-conda activate dann
-pip install -r requirements.txt
+#### Installation
 
+Install library versions taht are compatible with your environment.
+
+```bash
+git clone https://github.com/Radioheading/STREAM-Boost.git STREAM
+cd STREAM
+conda create -n your_env python=3.7
+conda activate your_env
 ```
 
-### Recommended configuration
+#### Recommended configuration
 
 ```
 python=3.7
 pytorch=1.12.1
 matplotlib=3.2.2
 sklearn=1.0.2
+cuda=11.3
 ```
 
-### Usages
-Running the code below will execute both `source-only` and `DANN` training and testing:
-```
-python main.py
-# You can adjust training settings in 'params.py', including batch size and the number of training epochs.
-```
-
-### t-SNE (t-distributed Stochastic Neighbor Embedding)
-Our code includes the functionality to visualize `t-SNE`, both before and after the process of domain adaptation using `sklearn.manifold`.
+you can simply run the code with `python main.py`, however, you need to manually change the hyper-parameters to simulate baseline or our model.
 
 ## Experimental results
-`MNIST -> MNIST-M`
 
-| Method                      | Test #1   | Test #2   | Test #3   | Test #4   | Test #5     | Avg.        |
-| :-------------------------: | :-------: | :-------: | :-------: | :-------: | :---------: | :---------: | 
-| Source Accuracy             | 89        | 98        | 98        | 90        | 98          | **61.2**    | 
-| Target Accuracy             | 47        | 56        | 54        | 46        | 53          | **51.2**    | 
+|Baseline | $pps=200$ | $pps=500$ | $pps=2000$ |
+|------------|-----------|-----------|------------|
+| random order | $74.74\%$ | $72.80\%$ | $66.79\%$ |
+| sequential order | $74.03\%$ | $67.50\%$ | $61.20\%$ |
 
-DANN
-| Method                      | Test #1   | Test #2   | Test #3   | Test #4   | Test #5     | Avg.        |
-| :-------------------------: | :-------: | :-------: | :-------: | :-------: | :---------: | :---------: | 
-| Source Accuracy             | 96        | 96        | 97        | 97        | 96          | **96.4**    | 
-| Target Accuracy             | 83        | 78        | 80        | 80        | 78          | **79.8**    | 
-| Domain Accuracy             | 60        | 60        | 61        | 64        | 61          | **61.2**    | 
-# STREAM-Boost
+|STREAM-DANN   | $pps=200$ | $pps=500$ | $pps=2000$ |
+|------------|-----------|-----------|------------|
+| random order | $82.81\%$ | $78.01\%$ | $68.86\%$ |
+| sequential order | $78.54\%$ | $75.60\%$ | $68.08\%$ |

@@ -130,14 +130,14 @@ def dann(encoder, classifier, discriminator, source_train_loader, target_train_l
             source_image, source_label = source_data
             target_image, target_label = target_data
 
-            source_data = [data_augmentation(image) for image in source_image]
-            target_data = [data_augmentation(image) for image in target_image]
+            # source_data = [data_augmentation(image) for image in source_image]
+            # target_data = [data_augmentation(image) for image in target_image]
 
             # 将数据加载到 GPU 并设置为非阻塞
-            # source_image = source_image.to(device, non_blocking=True)
-            # source_label = source_label.to(device, non_blocking=True)
-            # target_image = target_image.to(device, non_blocking=True)
-            # target_label = target_label.to(device, non_blocking=True)
+            source_image = source_image.to(device, non_blocking=True)
+            source_label = source_label.to(device, non_blocking=True)
+            target_image = target_image.to(device, non_blocking=True)
+            target_label = target_label.to(device, non_blocking=True)
             p = float(batch_idx + start_steps) / total_steps
             alpha = 2. / (1. + np.exp(-10 * p)) - 1
 
@@ -170,15 +170,15 @@ def dann(encoder, classifier, discriminator, source_train_loader, target_train_l
             domain_target_labels = torch.ones(target_label.shape[0]).type(torch.LongTensor)
             domain_combined_label = torch.cat((domain_source_labels, domain_target_labels), 0).cuda()
             source_target_label = torch.cat((source_label, target_predict_label.flatten()), 0).cuda()
-            if epoch >= 0 or epoch >= 4:
+            if epoch == 0 or epoch >= 4:
                 domain_loss = discriminator_criterion(domain_pred, domain_combined_label)
             else :
                 domain_loss = MyLoss(domain_pred, domain_combined_label, source_target_label, distribution, batch_idx)
-            MMD_loss = mmd_rbf_(source_feature, target_feature, [2, 6, 10])
+            # MMDloss = MMD_loss(source_feature, target_feature, source_label, target_label, distribution)
             # if batch_idx % 500 == 0 :
             #     print(f'[{batch_idx}/{len(new_target_train_loader)}]\tClassification Loss: {class_loss.item():.4f}\tDomain Loss: {domain_loss.item():.4f}\tMMD Loss: {MMD_loss.item():.4f}')
             if epoch > 0 :
-                total_loss = class_loss + 1 * domain_loss
+                total_loss = class_loss + domain_loss
             else :
                 total_loss = class_loss + domain_loss
             total_loss.backward()
@@ -188,10 +188,28 @@ def dann(encoder, classifier, discriminator, source_train_loader, target_train_l
             update_replay_buffer(target_replay_buffer, test.get_sureness(encoder, classifier, new_target_train_loader, True), 0.8, True)
         if epoch == 0 :
             update_replay_buffer(target_replay_buffer, test.get_sureness(encoder, classifier, new_target_train_loader, True), 0.2, False)
-        # last = datetime.datetime.now()
-        # test.tester(encoder, classifier, discriminator, source_test_loader, target_test_loader, training_mode='DANN')
-        # last_wasted_time += (datetime.datetime.now() - last).seconds + 1
+        last = datetime.datetime.now()
+        test.tester(encoder, classifier, discriminator, source_test_loader, target_test_loader, training_mode='DANN')
+        last_wasted_time += (datetime.datetime.now() - last).seconds + 2
     # old_dann(encoder, classifier, discriminator, source_train_loader, target_train_loader, start_time)
+
+def MMD_loss(source_feature, target_feature, source_label, target_label, distribution):
+    # 将数据按标签分成十组
+    num_groups = 10
+    mmd_losses = []
+    for i in range(num_groups):
+        src_group = source_feature[source_label == i]
+        tgt_group = target_feature[target_label == i]
+        mmd_loss = mmd_rbf_(src_group, tgt_group, [2, 6, 10])
+        mmd_losses.append(mmd_loss)
+
+    # 计算每个标签的权重
+    weights = augment_weight(distribution)
+
+    # 根据权重加权求和MMD损失
+    total_loss = sum([mmd * weight for mmd, weight in zip(mmd_losses, weights)])
+
+    return total_loss
 
 
 # ditching process, remove the sure data from the replaying buffer
@@ -216,7 +234,6 @@ def update_replay_buffer(replay_buffer, sureness, bottom_per = 1 - params.expel_
     return new_replay_buffer
     
 def MyLoss(input_1, input_2, label, distribution, idx):
-    # 将输入数据移动到 CUDA 设备上
     input_1 = input_1.cuda()
     input_2 = input_2.cuda()
     # softmax
